@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Happy New Year 2023
+    </title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+</head>
+<body>
+<div>
+    <div id="from">
+    <label>
+        From
+        <input type="text" id="nameFrom" required />
+    </label>
+    </div>
+    <br/>
+    <div id="to">
+    <label>
+        To
+        <input type="text" id="nameTo" required />
+    </label>
+    </div>
+    <label>
+       <input type="submit" onclick="writeLetter()" id="submit" value="Submit">
+    </label>
+</div>
+<div id="result">
+    <p id="l-head">    Dear <span id="fromName"></span>, </p>
+    <p id="l-content">Wish You Have a happy 2023!</p>
+    <div id="l-end">
+        <p>Yours Truly,</p>
+        <span id="toName"></span>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
